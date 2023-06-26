@@ -1,0 +1,31 @@
+
+Section 11: Overview
+
+Functions
+
+	- Function
+
+		+ definition
+	
+		+ prototype
+
+		+ parameters and pass-by-value
+
+		+ return statement
+
+		+ default parameter values
+
+		+ overloading
+
+		+ passing arrays to function
+	
+		+ pass-by-reference
+
+		+ inline functions
+	
+		+ auto return type
+
+		+ recursive functions
+
+
+
