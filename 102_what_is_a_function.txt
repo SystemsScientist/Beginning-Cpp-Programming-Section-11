@@ -1,0 +1,196 @@
+
+Section 11: What is a function?
+---------------------------------------------------------------------
+
+Functions
+
+	- C++ programs
+
+		+ C++ Standard Libraries (functions and classes)
+
+		+ Third-party libraries (functions and classes)
+
+		+ Our own functions and classes
+
+
+	- Functions allow the modularization of a program
+
+		+ Separate code into logical self-contained units
+
+		+ These units can be reused 
+
+
+Previous functions in the course
+
+	int main() {
+
+		// read input
+		statement1;
+		statement2;
+		statement3;
+		statement4;
+
+		// process input
+		statement5;
+		statement6;
+		statement7;
+
+		// provide output
+		statement8;
+		statement9;
+		statement10;
+
+		return 0;
+	}
+
+
+Modularized Code I
+
+	int main() {
+
+		// read input
+		read_input();
+
+		// process input
+		process_input();
+	
+		// provide output
+		provide_output();
+
+		return 0;
+	}
+
+
+Modularized Code II
+
+	int main() {
+
+		read_input();
+
+		process_input();
+	
+		provide_output();
+
+		return 0;
+	}
+
+	read_input() {
+
+		statement1;
+		statement2;
+		statement3;
+		statement4;
+	}
+
+	process_input() {
+
+		statement5;
+		statement6;
+		statement7;
+	}
+
+	provide_output() {
+
+		statement8;
+		statement9;
+		statement10;
+	}
+
+
+Boss/Worker Analogy
+
+	- Write your code to the function specification
+
+	- Understand what the function does
+
+	- Understand what information the function needs
+
+	- Understand what the function returns
+
+	- Understand any errors the function may produce
+
+	- Understand any performance constraints
+
+	
+	- Don't worry about HOW the function works internally
+
+		+ Unless you are the one writing the function!
+
+
+Example <cmath>
+
+	- Common mathematical calculations
+
+	- Global functions called as:
+
+		function_name (argument);
+		function_name (argument1, argument2, ...);
+
+		cout << sqrt (400.0) << endl;	// 20.0
+		double result;
+		result = pow (2.0, 3.0);	// 2.0 ^ 3.0
+
+
+User-defined functions I
+
+	- We can define our own functions
+
+	- Here is a preview
+
+	/* 
+	  This is a function that expects two integers a and b
+	  It calculates the sum of a and b and returns it to the caller
+	  Note that we specify that the function returns an int
+	*/
+
+	int add_numbers(int a, int b) {
+
+		return a + b;
+	}
+
+	// I can call the function and use the value that it returns
+	cout << add_numbers (20, 40);
+
+
+User-defined functions II
+
+	- Return zero if any of the arguments are negative
+
+	/*
+	  This is a function that expects two integers a and b
+	  It calculates the sum of a and b and returns it to the caller
+	  Only if a and b are non-negative. Otherwise, it returns 0
+	  Note that we specify that the function returns an int
+
+	int main(int a, int b) {
+
+		if (a < 0 || a < b)
+			return 0;
+		else
+			return a + b;
+
+
+Header Files
+
+	- Cpp Reference header files
+
+		https://en.cppreference.com/w/cpp/header
+
+	- <cmath> library
+
+		https://en.cppreference.com/w/cpp/header/cmath
+
+	- pow function
+
+		https://en.cppreference.com/w/cpp/numeric/math/pow
+
+	- <cstdlib> library
+
+		https://en.cppreference.com/w/cpp/header/cstdlib
+
+	- rand function
+
+		https://en.cppreference.com/w/cpp/numeric/random/rand
+	
+
+
