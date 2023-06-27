@@ -1,0 +1,216 @@
+
+Section 11: Function Definition
+--------------------------------------------------------------------------
+
+Defining Functions
+
+	- name
+
+		+ the name of the function
+
+		+ same rules as for variables
+
+		+ should be meaningful
+		
+		+ usually a verb or verb phrase
+
+	- parameter list
+
+		+ the variables passed into the function
+
+		+ their types must be specified
+
+	- return type
+
+		+ the type of the data that is returned
+		  from the function
+
+	- body
+
+		+ the statements that are executed when
+		  the function is called
+
+		+ in curly braces {}
+
+
+Example - with no parameters
+
+	int function_name () {
+
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+
+		return 0;
+	}
+
+	function components
+	-------------------------------------
+
+	1. "function_name" is the name
+
+	2. "()" is the parameter
+
+	3. "int" is the return type
+
+	4. "statement1" through "return 0"
+	   is the body
+
+
+Example - with 1 parameter
+
+	int function_name (int a) {
+
+		statement1;
+		statement2
+		.
+		.
+		.
+		statementn;
+	
+		return 0;
+	}
+
+	function components
+	-------------------------------------
+
+	1. "function_name" is the name of the
+	   function
+
+	2. "(int a)" is the parameter
+
+	3. "int" is the return type
+
+	4. "statement1" through "return 0"
+	   is the body
+
+Example - with no return type (void)
+
+	void function_name () {
+
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	}
+
+	function components
+	---------------------------------------
+
+	1. "function_name" is the name of the
+	   function
+
+	2. "()" is the parameter
+
+	3. there is no return type
+
+	4. "statement1" through "statementn"
+	   is the body
+
+
+Example - with multiple parameters
+
+	void function_name (int a, std::string b) {
+
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	}
+
+	function components
+	---------------------------------------
+
+	1. "function_name" is the name of the
+	   function
+
+	2. "(int a, std::string b)" are the
+	   parameters
+
+	3. there is no return type
+
+	4. "statement1" through "statementn"
+	   is the body
+
+
+A function with no return type and no parameters
+
+	void say_hello () {
+		cout << "Hello" << endl;
+	}
+
+
+Calling a function I
+
+	void say_hello () {
+		cout << "Hello" << endl;
+	}
+
+	int main() {
+		say_hello();
+		
+		return 0;
+	}
+
+
+Calling a function II
+
+	void say_hello () {
+		cout << "Hello" << endl;
+	}
+
+	int main () {
+		for (int i {1}; i <= 10; ++i)
+			say_hello();
+		
+		return 0;
+	}
+
+
+Calling a function III
+
+	void say_world () {
+		cout << " World" << endl;
+	}
+
+	void say_hello () {
+		cout << "Hello" << endl;
+		say_world();
+	}
+
+	int main() {
+		say_hello();
+
+		return 0;
+	}
+
+
+Calling a function IV
+
+	void say_world () {
+		cout << " World" << endl;
+		cout << "Bye from say_world" << endl;
+	}
+
+	void say_hello () {
+		cout << "Hello" << endl;
+		say_world();
+		cout << "Bye from say_hello" << endl;
+	}
+
+	int main () {
+		say_hello();
+		cout << "Bye fro main" << endl;
+	
+		return 0;
+	}
+
+
+
