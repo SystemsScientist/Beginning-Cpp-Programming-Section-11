@@ -1,0 +1,115 @@
+
+Section 11: Function Prototype
+----------------------------------------------------------------------------
+
+Function Prototypes
+
+	- The compiler must 'know' about a function before it is used
+
+		+ Define functions before calling them
+	
+			- OK for small programs
+
+			- Not a practical solution for larger
+			  programs
+
+	- Use function prototypes
+
+		+ Tells the compiler what it needs to knwo without
+		  a full function definition
+
+		+ Also called forward declarations
+
+		+ Placed at the beginning of the program
+
+		+ Also used in our own header files (.h) - more
+		  about this later
+
+
+Example I
+
+	int function_name ();	// prototype
+
+	int function_name () {
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	
+		return 0;
+	}
+
+
+Example II
+
+	int function_name (int);   // prototype option
+	int function_name (int a); // prototype option
+
+	int function_name (int a) {
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	
+		return 0;
+	}
+
+
+Example III
+
+	void function_name (); // prototype
+
+	void function_name () {
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	}
+
+
+Example IV
+
+	void function_name (int a, std::string b); // prototype option
+	void function_name (int, std::string);	   // prototype option
+
+	void function_name (int a, std::string b) {
+		statement1;
+		statement2;
+		.
+		.
+		.
+		statementn;
+	}
+
+
+Example V
+
+	void say_hello (); // prototype
+	void say_world (); // prototype
+
+	int main () {
+		say_hello();
+		cout << "Bye from main" << endl;
+		
+		return 0;
+	}
+
+	void say_world () {
+		cout << " World" << endl;
+		cout << "Bye from say_world" << endl;
+	}
+
+	void say_hello() {
+		cout << "Hello" << endl;
+		say_world();
+		cout << "Bye from say_hello" << endl;
+	}
+
+
+
