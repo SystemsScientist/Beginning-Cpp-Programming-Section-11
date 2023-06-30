@@ -1,0 +1,11 @@
+-I/home/snarkydata/udemy-courses/Cpp-Courses/Beginning-Cpp-Programming-From-Beginner-to-Beyond/Section-11-Functions/Section-11-Workspace/105-Function-Parameters-and-the-return-Statement-Example-2
+-I/usr/include/c++/9
+-I/usr/include/x86_64-linux-gnu/c++/9
+-I/usr/include/c++/9/backward
+-I/usr/lib/gcc/x86_64-linux-gnu/9/include
+-I/usr/local/include
+-I/usr/include/x86_64-linux-gnu
+-I/usr/include
+-std=c++17
+-target
+x86_64-linux-gnu
