@@ -1,4 +1,7 @@
-/*  Purpose: 
+/*
+ *  Author: Matt Johnson
+ *  Subject: function parameters
+ *  Purpose: 
  *  Date: 06/30/2023
  * 
  *  Notes:
